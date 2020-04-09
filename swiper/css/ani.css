@@ -1,0 +1,18 @@
+
+* { padding: 0; margin: 0;}
+.slider { height: 100vh;}
+.slider .swiper-slide { display: flex; align-items: center; justify-content: center; flex-direction: column; color:#092f6e; text-align: center;}
+.slider .swiper-slide.bg1 { background: url(../images/visual1.png) no-repeat center / cover;}
+.slider .swiper-slide.bg2 { background: url(../images/visual2.png) no-repeat center / cover; color:#fff;}
+.slider .swiper-slide.bg3 { background: url(../images/visual3.png) no-repeat center / cover;}
+.slider .swiper-slide.bg4 { background: url(../images/visual4.png) no-repeat center / cover; color:#fff;}
+.slider .swiper-slide span { opacity: 0; margin-top: -150px; font-size: 20px; }
+.slider .swiper-slide p { opacity: 0; font-size: 100px; font-weight: bold;}
+.slider .swiper-slide div { opacity: 0; font-size: 20px;}
+.slider .swiper-slide.swiper-slide-active span { animation: text 1s .2s both;}
+.slider .swiper-slide.swiper-slide-active p { animation: text 1s .5s both;}
+.slider .swiper-slide.swiper-slide-active div { animation: text 1s .8s both;}
+@keyframes text {
+  0% { opacity: 0; transform: translateY(30px);}
+  100% { opacity:1; transform: translateY(0);}
+}
