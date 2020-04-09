@@ -1,0 +1,40 @@
+.visual { position:relative;}
+.visual button { position:absolute; z-index:10; top:50%; transform:translateY(-50%); width:71px; height:71px; border-radius:100%; background:rgba(0,0,0,.5); border:none;}
+.visual button:before {  font-family:'xeicon'; color:#fff; font-size:45px;}
+.visual button.slick-prev { left:50px; font-size:0; color:transparent;}
+.visual button.slick-prev:before { content:"\e93d";}
+.visual button.slick-next { right:50px; font-size:0; color:transparent;}
+.visual button.slick-next:before { content:"\e940";}
+.btn { text-align: center;}
+.btn button { margin: 10px 0 0;width: 100px; height: 40px; border: 1px solid grey; background:pink;}
+
+
+.visual .bg1 { height: 760px; background: url(../images/bg_visual.png) no-repeat center / cover;}
+.visual .bg1 p { font-size: 60px; text-align: center;}
+.visual .bg1 .txt1 { opacity: 0; transform: translateX(-50px); transition: all .5s .5s;}
+.visual .bg1.slick-active .txt1 { opacity: 1; transform: translateX(0);}
+.visual .bg1 .txt2 { opacity: 0; transform: translateX(50px); transition: all .5s .7s;}
+.visual .bg1.slick-active .txt2 { opacity: 1; transform: translateX(0);}
+.visual .bg1 .txt3 { opacity: 0; transform: translateY(50px); transition: all .5s .9s;}
+.visual .bg1.slick-active .txt3 { opacity: 1; transform: translateY(0);}
+
+
+.visual .bg2 { position: relative; height: 760px; background: url(../images/bg_visual.png) no-repeat center / cover; text-align: center;}
+.visual .bg2 > div { position: absolute; left: 50%; top:50%; transform: translate(-50%, -50%); line-height: 1;text-shadow: 0 0 3px rgba(0,0,0,.5)}
+.visual .bg2 > div * { margin: 0; padding: 0;}
+.visual .bg2 h2 { font-size: 60px; color:orange; opacity: 0;}
+.visual .bg2 .txt1 { padding: 10px 0;font-size: 25px; color:#fff; opacity: 0;}
+.visual .bg2 .txt2 { padding: 10px 0;font-size: 18px; color:#fff;  opacity: 0;}
+.visual .bg2.slick-active h2 { animation: ani 1 .5s .5s both;}
+.visual .bg2.slick-active .txt1 { animation: ani 1 .5s .7s both;}
+.visual .bg2.slick-active .txt2 { animation: ani 1 .5s .9s both;}
+@keyframes ani {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+
+}
+
+
+
+
+/*  */
